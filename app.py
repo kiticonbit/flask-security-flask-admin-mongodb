@@ -5,7 +5,7 @@ Use "python manage.py runserver" to start the develop web  on localhost:5000.
 Use "python manage.py runserver --help" for additional runserver options.
 """
 
-from flask_script import Manager
+from flask_script import Manager, Server
 from app import create_app
 
 # Setup Flask-Script with command line commands
