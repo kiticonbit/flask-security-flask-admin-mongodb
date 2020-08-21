@@ -11,11 +11,12 @@ from app import create_app
 # Setup Flask-Script with command line commands
 app = Manager(create_app)
 
-# if __name__ == "__main__":
-#     # python manage.py                      # shows available commands
-#     # python manage.py runserver --help     # shows available runserver options
-#     app.run()
-app.add_command("runserver", Server(
-    use_debugger = True,
-    use_reloader = True,
-    host = '0.0.0.0') )
+
+# app.add_command("runserver", Server(
+#     use_debugger = True,
+#     use_reloader = True,
+#     host = '0.0.0.0') )
+if __name__ == "__main__":
+    # python manage.py                      # shows available commands
+    # python manage.py runserver --help     # shows available runserver options
+    app.run()
