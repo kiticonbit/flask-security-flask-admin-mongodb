@@ -14,4 +14,4 @@ app = Manager(create_app)
 if __name__ == "__main__":
     # python manage.py                      # shows available commands
     # python manage.py runserver --help     # shows available runserver options
-    app.run(host='0.0.0.0')
+    app.run()
