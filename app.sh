@@ -1,1 +1,1 @@
-python app.py runserver
+python ../src/app.py runserver
